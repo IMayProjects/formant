@@ -9,17 +9,18 @@ Formant is an advanced tool for web-based survey construction & management tool
     - Toggle Multiple response (eg: `+ add another`) 
     - INDEX 
   -  Question  
-    -   NID (Node ID)
-      -  `node(nid)` points to a particular node & grants access to its properties
-      -  `question(nid)`, `section(nid)`, `answer(INDEX)` (matches exact answer) or `answer()` (matches any of the answers) which grant access to nodes as specific types of objects with their properties.
+    -  NID (Node ID)
+    -  `node(nid)` points to a particular node & grants access to its properties
+    -  `question(nid)`, `section(nid)`, `answer(INDEX)` (matches exact answer) or `answer()` (matches any of the answers) which grant access to nodes as specific types of objects with their properties.
     - require(\[(expression1),expression2,...\]) / require(null)
     -  Question Toggling
       -  Progress to...
       -  Display if....
-  - Response validation
-    - Based on current question
-    - Based on another question
-  - Section Navigation
+    - Response validation
+      - Based on current question
+      - Based on another question
+  - Section
+    - Navigation
     - NID
     - require(nid,\[expression1,expression2,...\])
 2. Survey Declaration DSL (QuestScript)
