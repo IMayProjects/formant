@@ -8,7 +8,7 @@ Formant is an advanced tool for web-based survey construction & management tool
   -  Answer
     - Toggle Multiple response (eg: `+ add another`) 
     - INDEX 
-  -  Question
+  -  Question  
     -  NID (Node ID)
       -  `node(nid)` points to a particular node & grants access to its properties
       -  `question(nid)`, `section(nid)`, `answer(INDEX)` (matches exact answer) or `answer()` (matches any of the answers) which grant access to nodes as specific types of objects with their properties.
