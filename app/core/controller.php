@@ -1,3 +1,10 @@
 <?php
 
-class Controller{}
+class Controller
+{
+    public function index()
+    {
+        echo "home/index";
+    }
+
+}
