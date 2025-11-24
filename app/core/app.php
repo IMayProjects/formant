@@ -1,5 +1,17 @@
 <?php
 
+$conn;
+
+$config_file = "./../../api/config/db_config.php";
+
+if (file_exists("./../../api/config/db_config.php")) {
+
+    require_once '../../api/init.php';
+    $conn = get_connection();
+} else {
+    echo "couldn't find config file";
+}
+
 class App
 {
     protected $controller = 'home';
@@ -10,6 +22,7 @@ class App
     {
         $url = $this->parseUrl();
         print_r($url);
+
 
         if (file_exists('../app/controllers/' . $url[0] . '.php')) {
             $this->controller = $url[0];
